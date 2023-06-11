@@ -205,3 +205,16 @@ export function handleDate(val) {
     )
   )
 }
+
+// 在data中寻找父节点为0的所有的后代
+export function findChildren(data, pid = 1) {
+  return data.filter(item => {
+    if (item.type === pid) {
+      const children = findChildren(data, item.id)
+      if (children.length > 0) {
+        item.children = children
+      }
+      return true
+    }
+  })
+}
