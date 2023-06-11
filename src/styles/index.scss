@@ -220,8 +220,6 @@ div:focus {
 // 主要按钮悬浮时的样式
 .el-button.el-button--warning:focus,
 .el-button.el-button--warning:hover{
-    width: 100px;
-    height: 40px;
     background: #FFAB98;
     border-radius: 4px;
 }
@@ -324,7 +322,7 @@ div:focus {
   color: #20232A;
 }
 .el-select .el-input__inner:focus,.el-input .el-input__inner:focus{
-  border-color: #E15536!important;
+  border-color: #E15536;
 }
 .el-radio__input.is-checked .el-radio__inner{
   border-color: #E15536;

@@ -153,3 +153,6 @@ export const getCostSetting = data => createAPI(`/cost-configuration-manager`, '
 
 // 设置成本
 export const setCostSetting = data => createAPI(`/cost-configuration-manager`, 'post', data)
+
+// 网点查询树状图
+export const getTree = data => createAPI(`/business-hall/tree`, 'get', data)
