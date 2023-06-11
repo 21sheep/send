@@ -48,13 +48,22 @@
       <!-- 全部、可用、停用 -->
       <el-row class="tabs">
         <el-col :span="2">
-          <el-button type="text" @click="handleStatus('all')">全部 {{ allTotal }}</el-button>
+          <el-button
+            type="text"
+            @click="handleStatus('all')"
+          >全部 {{ allTotal }}</el-button>
         </el-col>
         <el-col :span="2">
-          <el-button type="text" @click="handleStatus('yes')">可用 {{ yesTotal }}</el-button>
+          <el-button
+            type="text"
+            @click="handleStatus('yes')"
+          >可用 {{ yesTotal }}</el-button>
         </el-col>
         <el-col>
-          <el-button type="text" @click="handleStatus('no')">停用 {{ noTotal }}</el-button>
+          <el-button
+            type="text"
+            @click="handleStatus('no')"
+          >停用 {{ noTotal }}</el-button>
         </el-col>
       </el-row>
 
@@ -315,9 +324,7 @@ import {
   getCarInfoList,
   addCar,
   enableCar,
-  getCarDetail,
-  getUnWorkingCar,
-  getWorkingCar
+  getCarDetail
 } from '@/api/vehicle.js'
 
 export default {
